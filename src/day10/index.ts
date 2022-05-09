@@ -43,7 +43,7 @@ const goA = (input, arrayLength: number) => {
   return array[0] * array[1]
 }
 
-const goB = (input, arrayLength: number) => {
+export const goB = (input, arrayLength: number) => {
   let knotList = input.trim().split("").map(char => char.charCodeAt(0));
   knotList.push(...[17, 31, 73, 47, 23])
   let currentPosition = 0;
