@@ -28,7 +28,6 @@ const convertSquareStringToSquare = (squareString: string): string[] => {
 }
 
 const splitSquareInSmallSquares = (square: string[]): string[] => {
-  // console.log("sqaure to split", square)
   const smallSquares: string[] = []
   if (square.length % 2 === 0) {
     for (let y = 0; y < square.length; y += 2) {
@@ -68,12 +67,6 @@ const getAllRotationsOfSquare = (square: string[]): string[] => {
   }
 
   return rotations
-}
-
-const printSquare = (square: string[]) => {
-  for (let line of square) {
-    console.log(line)
-  }
 }
 
 const goA = (input, iterations: number) => {
